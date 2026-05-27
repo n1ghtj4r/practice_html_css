@@ -1,0 +1,24 @@
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 8px 0;
+}
+
+.card button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="information-visible-all-time.css" />
+</head>
+<body>
+    <div class="info-section">
+    <h2>Order Summary</h2>
+    <p><strong>Items in Cart:</strong> 3</p>
+    <p><strong>Total Price:</strong> $75.00</p>
+    <div class="advanced-options">
+        <button id="toggle-advanced-btn" aria-expanded="false" aria-controls="advanced-details">
+        Show Advanced Options
+        </button>
+        <div id="advanced-details" class="hidden" tabindex="-1">
+        <p>Apply coupon codes, gift wrapping, or select shipping preferences here.</p>
+        <form>
+            <label for="coupon">Coupon Code:</label><br />
+            <input type="text" id="coupon" name="coupon" /><br /><br />
+            <label>
+            <input type="checkbox" name="gift-wrap" /> Gift wrap this order
+            </label><br /><br />
+            <label for="shipping">Shipping method:</label><br />
+            <select id="shipping" name="shipping">
+            <option value="standard">Standard (Free)</option>
+            <option value="express">Express ($10.00)</option>
+            </select>
+        </form>
+        </div>
+    </div>
+    </div>
+
+    <script src="information-visible-all-time.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+A good example of this would be an e-commerce site. Users should be able to browse through the products and add a few items to their cart. 
+Then, if they are interested in purchasing, they will need to register.
+
+Note....
+
+When designing your applications, users should be able to see the value and feel like the application is safe to provide their information. 
+Otherwise, they will not be willing to register and you will lose potential customers.
+
+You will need to make sure to communicate that the user's sensitive data will be protected and secure.
+
+Lazy registration is a useful design pattern that allows users to see the value of your application before they are willing to provide their information.

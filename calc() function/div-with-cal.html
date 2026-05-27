@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="div-with-cal.css">
+</head>
+<body>
+    <!--""""function(argument1, argument2, argument3)"""" - Like you can see in the code below, to call a function, 
+    you write its name followed by the arguments within parentheses, separated by commas. 
+    There shouldn't be a space between the name of the function and the opening parenthesis-->
+
+    <!--""""calc(expression)"""" This is how you can call the calc() function. You write the name calc,
+    followed by parentheses, and within the parentheses, you write the expression-->   
+
+    <!--dark blue background-->
+
+    <div>Hello, World!</div>
+
+    <!--For example, the expression below would not be a valid expression because the subtraction operator is immediately before the second operand-->
+    <!--calc(100% -30px)-->
+
+    <!--The subtraction (-) operator must be surrounded by whitespace, like this. Adding the whitespace will create a valid expression.-->
+    <!--calc(100% - 30px)-->
+    
+    <!--Also, if you use the value zero to represent length in the expression that you pass into the calc() 
+    function, you must include the units. For example, this expression would not be valid-->
+    <!--calc(100% - 0)-->
+
+    <!--You would need to add the units, like px.-->
+    <!--calc(100% - 0px)-->
+
+    <!--You should also know that currently, if you use the multiplication or division operators, one of the operands has to be unitless. For the division operator, 
+    specifically the right operand has to be unitless. This would not be a valid expression because both operands have units (pixels).
+    One of the operands, either 5 or 50, must be unitless-->
+    <!--calc(5px * 50px)-->
+
+    <!--You would need to omit the units in one of them. Both of these alternatives would be valid-->
+    <!--calc(5 * 50px)
+    calc(5px * 50)-->
+
+    <!--And this is an example with the division operator. This would not be a valid expression since they both have units:-->
+    <!--calc(50% / 5)-->
+
+</body>
+</html>     

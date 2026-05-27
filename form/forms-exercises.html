@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">survey for improving our system</p>
+
+    <form id="survey-form">
+
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name-label" required placeholder="Juan Dela Cruz">
+
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email-label" required placeholder="Juan@gmail.com">
+
+      <label for="number" id="number-label">Number</label>
+      <input type="number" name="number-label" id="number" min="1" max="11" placeholder="9">
+
+      <p>Food</p>
+
+      <select id="dropdown">
+        <option>Burger</option>
+        <option>Sandwitch</option>
+      </select>
+
+      <p>Gender</p>
+
+      <input type="radio" value="male" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" value="female" name="gender">
+      <label for="female">Female</label>
+
+      <p>Do you like me?</p>
+
+      <label for="yes">Yes</label>
+      <input id="yes" type="checkbox" value="yes">
+      <label for="no">No</label>
+      <input id="no" type="checkbox" value="no">
+
+      <p>Why you like me? or why you not like me?</p>
+
+      <textarea></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+
+    </form>
+  </body>
+</html>

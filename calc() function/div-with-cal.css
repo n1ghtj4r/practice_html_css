@@ -1,0 +1,5 @@
+div {
+  color: white;
+  background-color: #1b1b32;
+  width: calc(50% - 20px);
+}

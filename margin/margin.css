@@ -1,0 +1,28 @@
+p {
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
+.all-margin {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  border: 2px solid black;
+}
+
+.all-size-margin {
+  margin: 10px;
+}
+
+.two-value-margin {
+  margin: 10px 20px;
+}
+
+.three-value-margin {
+  margin: 10px 20px 30px;
+}
+
+.four-value-margin {
+  margin: 10px 20px 30px 40px;
+}

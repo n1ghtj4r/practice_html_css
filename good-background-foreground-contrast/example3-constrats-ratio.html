@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .contrast-example {
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+
+    .aa-contrast {
+        background-color: #ffffff; 
+        color: #4b4b4b; 
+    }
+
+    .aaa-contrast {
+        background-color: #ffffff; 
+        color: #1a1a1a; 
+    }
+
+    .label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="contrast-example aa-contrast">
+    <span class="label">AA Standard (Contrast Ratio ~4.5:1)</span>
+    This text meets the minimum accessibility standard for contrast.
+    </div>
+
+    <div class="contrast-example aaa-contrast">
+    <span class="label">AAA Standard (Contrast Ratio ~7:1)</span>
+    This text meets the highest accessibility standard for contrast.
+    </div>
+</body>
+</html>

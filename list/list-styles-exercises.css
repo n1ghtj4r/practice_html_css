@@ -1,0 +1,32 @@
+li {
+  margin-bottom: 40px;
+}
+
+.line-height li {
+  line-height: 2; 
+}
+
+.list-img {
+      list-style-image: url('https://cdn.freecodecamp.org/platform/universal/freecodecamp-org-gravatar.jpeg');
+      list-style-position: inside;
+}
+
+a:link { 
+  color: red;
+}
+
+.visited-link:visited {
+  color: green;
+}
+
+.hover-link:hover {
+  color: green;
+}
+
+.focus-link:focus {
+  outline: 2px solid orange;
+}
+
+.focus-link-color:active {
+  color: pink;
+}

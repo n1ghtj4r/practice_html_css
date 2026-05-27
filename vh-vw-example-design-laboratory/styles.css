@@ -1,0 +1,24 @@
+body{
+  padding-top: 50px; 
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 50vw;
+  min-height: calc(100vh - 100px); 
+}
+
+hr{
+  width: 100%;
+}
+
+section{
+  width: 70%;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+footer{
+  margin-left: 40%;
+}

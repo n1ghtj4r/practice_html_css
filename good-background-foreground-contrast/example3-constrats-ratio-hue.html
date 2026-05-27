@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .contrast-21 {
+        background-color: white;
+        color: black;
+        padding: 15px;
+        font-family: sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .blue-bg {
+        background-color: #add8e6; 
+        padding: 15px;
+        font-family: sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .low-sat-red-on-blue {
+        background-color: #0000cc; 
+        color: #b23333;
+        margin-bottom: 20px;
+    }
+
+    .high-sat-red-on-blue {
+        background-color: #0000cc; 
+        color: #ff4d4d; 
+        margin-bottom: 20px;
+    }
+    
+    .dark-red-on-light-blue {
+        background-color: #add8e6; 
+        color: #8b0000;
+    }
+    </style>
+</head>
+<body>
+    <div class="contrast-21">
+    <span class="label">Contrast Ratio 21:1</span>
+    This example more than meets the AAA standard with black text on white background.
+    </div>
+
+    <div class="low-sat-red-on-blue blue-bg">
+    <span class="label">Low Saturation Red on Medium Blue (Contrast ~1.49:1)</span>
+    This red has low saturation, resulting in a poor contrast ratio.
+    </div>
+
+    <div class="high-sat-red-on-blue blue-bg">
+    <span class="label">Higher Saturation Red on Medium Blue (Contrast ~3.54:1)</span>
+    Increasing the saturation of red improves contrast but it’s still below AA standard.
+    </div>
+
+    <div class="dark-red-on-light-blue">
+    <span class="label">Darker Red on Light Blue (Contrast ~10.34:1)</span>
+    Decreasing the lightness of the red increases the contrast ratio significantly.
+    </div>
+</body>
+</html>

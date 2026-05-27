@@ -1,0 +1,27 @@
+button:active {
+  background: greenyellow;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  background: crimson;
+}
+
+.container-first-child p:first-child {
+  background: lightcoral;
+  padding: 0.4rem;
+}
+
+.container-last-child p:last-child {
+  background: lightcoral;
+  padding: 0.4rem;
+}
+
+.visited-link:visited {
+  color: rgb(255, 0, 0);
+}
+
+.disabled-button:disabled {
+  background-color: lightgray;  
+}

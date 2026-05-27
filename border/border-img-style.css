@@ -1,0 +1,22 @@
+.simple-border {
+  /*border: 2px solid red;*/
+ /*border: 2px dashed red;*/
+  /*border: 2px dotted red;*/
+  border: 2px double red;
+}
+
+.side-controler{
+    border-top: 10px solid red;
+    border-right: 10px dashed green;
+    border-bottom: 10px dotted blue;
+    border-left: 10px double purple;
+}
+
+.outline-style{
+  outline: 3px solid gold;
+}
+
+.border-radius-style{
+    border: 2px solid black;
+    border-radius: 10px;
+}

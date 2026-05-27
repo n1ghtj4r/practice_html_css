@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <button aria-label="Search">
+    <i class="fa-solid fa-magnifying-glass">Search</i>
+    </button>
+
+    <br><br>
+
+    <input type="text" aria-labelledby="search-btn">
+    <button type="button" id="search-btn">Search</button>
+
+    <br><br>
+
+    <div>
+    <span id="volume-label">Volume</span>
+    <span id="volume-details">Adjust the volume level</span>
+    <input
+        type="range"
+        min="0"
+        max="100"
+        value="30"
+        aria-labelledby="volume-label volume-details">
+    </div>
+
+    <br><br>
+
+    <p>aria-hide</p>
+
+    <button>
+    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+    <span class="label">Settings</span>
+    </button>
+
+    <br><br>
+
+    <p>aria-describe</p>
+
+    <form>
+    <label for="password">Password:</label>
+    <input type="password" id="password" aria-describedby="password-help" />
+    <p id="password-help">Your password must be at least 8 characters long.</p>
+    <button aria-describedby="delete-message">Delete</button>
+
+    <p id="delete-message">Warning! All deletions are permanent.</p>
+    </form>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

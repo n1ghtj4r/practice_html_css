@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="progressive-disclosure-example.css">
+</head>
+<body>
+    <div class="progressive-disclosure">
+    <button id="show-details-btn" aria-expanded="false" aria-controls="extra-content">
+        Show More Details
+    </button>
+    <div id="extra-content" class="hidden" tabindex="-1">
+        <p>
+        Here are additional details that are revealed only when you want to see them.
+        This keeps the interface clean and reduces cognitive load.
+        </p>
+    </div>
+    </div>
+    <script src="progressive-disclosure-example.js"></script>
+</body>
+</html>

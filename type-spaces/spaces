@@ -1,0 +1,8 @@
+-macro white space
+    The space between larger elements like images, text blocks and buttons.
+
+-active white space
+    Space that is intentionally created to help guide the user's eye and draw attention to certain elements on the page.
+
+-passive white space
+    Space that is left over after all the elements on a page have been placed.

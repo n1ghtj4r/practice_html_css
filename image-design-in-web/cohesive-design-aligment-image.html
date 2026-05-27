@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: sans-serif;
+        padding: 40px 20px;
+        background-color: #ffffff;
+        color: #222;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .aligned-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aligned-content img {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .aligned-text {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .aligned-text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .aligned-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    </style>
+</head>
+<body>
+    <div class="aligned-content">
+    <img 
+        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" 
+        alt="Two cats peacefully sleeping together."
+    >
+
+    <div class="aligned-text">
+        <h2>Aligned Elements</h2>
+        <p>
+        In this example, the image is aligned horizontally next to the text block. This creates a visually cohesive layout, 
+        where both elements feel like they belong together. Proper alignment like this improves readability and reinforces 
+        structure in your design.
+        </p>
+    </div>
+    </div>
+</body>
+</html>
