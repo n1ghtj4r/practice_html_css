@@ -1,0 +1,8 @@
+.empty-block {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 0;
+  }
+  .next-block {
+    background-color: lightgray;
+  }
