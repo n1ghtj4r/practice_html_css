@@ -1,0 +1,17 @@
+.box {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 4px solid black;
+  margin: 10px;
+}
+
+#red-div {
+  box-sizing: content-box;
+  background-color: red;
+}
+
+#blue-div {
+  box-sizing: border-box;
+  background-color: blue;
+}
