@@ -1,0 +1,8 @@
+ .parent {
+    margin-top: 40px;
+    background-color: lightyellow;
+  }
+  .child {
+    margin-top: 30px;
+    background-color: lightpink;
+  }
