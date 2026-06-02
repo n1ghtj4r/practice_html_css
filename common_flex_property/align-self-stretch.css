@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: flex-start; 
+  border: 2px solid #444;
+  height: 200px; 
+}
+
+.box {
+  width: 100px;
+  border: 1px solid #888;
+  background-color: lightblue;
+  margin: 4px;
+}
+
+.special {
+  align-self: stretch; 
+  background-color: lightcoral;
+}
