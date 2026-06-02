@@ -1,0 +1,23 @@
+main {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
+}
+
+div {
+  width: 80px;
+  height: 50px;
+}
+
+#first-div {
+  background-color: #4d70b2;
+}
+
+#second-div {
+  background-color: #5c4db2;
+}
+
+#third-div {
+  background-color: #4da3b2;
+}
