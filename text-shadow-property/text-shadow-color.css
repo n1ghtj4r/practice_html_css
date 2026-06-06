@@ -1,0 +1,10 @@
+p {
+  text-shadow: 3px 2px #00ffc3;
+  /*you can also input the color first like this, but its same output: 
+
+  p {
+  text-shadow: #00ffc3 3px 2px;
+    }
+
+    */
+}
