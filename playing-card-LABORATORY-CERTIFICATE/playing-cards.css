@@ -1,0 +1,41 @@
+.card{
+  width: 250px;
+  height: 400px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 50px;
+  background-color: aliceblue;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+#playing-cards{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+
+.left{
+  align-self: flex-start;
+}
+
+.middle{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.right{
+  align-self: flex-end;
+}
+
+.color-red{
+  color: red;
+}
