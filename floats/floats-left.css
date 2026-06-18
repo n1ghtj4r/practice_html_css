@@ -1,0 +1,9 @@
+.container {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+}
