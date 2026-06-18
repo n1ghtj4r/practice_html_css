@@ -1,0 +1,15 @@
+.container {
+  border: 1px solid black;
+}
+
+/* Clearfix CSS */
+.container::after {
+  content: "";  
+  display: block;
+  clear: both;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+}
