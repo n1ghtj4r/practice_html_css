@@ -1,0 +1,8 @@
+a {
+  display: block;
+}
+
+a[href][title] {
+  display:block;
+  color: green;
+}
