@@ -1,0 +1,14 @@
+a[class~="primary"] {
+  color: red;
+  font-weight: bold;
+}
+
+a[href^="https://"] {
+  color: green;
+  text-decoration: underline;
+}
+
+a[href$=".com"] {
+  color: darkgreen;
+  text-decoration: underline dotted;
+}
