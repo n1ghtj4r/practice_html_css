@@ -1,0 +1,20 @@
+/* Base styles for mobile */
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Styles for tablets */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+/* Styles for desktops */
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
