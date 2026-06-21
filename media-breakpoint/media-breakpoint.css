@@ -1,0 +1,6 @@
+/* Styles for screens wider than 768px */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
