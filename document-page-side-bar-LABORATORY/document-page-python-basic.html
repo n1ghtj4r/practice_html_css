@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="document-page-python-basic.css">
+  </head>
+
+  <body>
+
+    <nav id="navbar">
+      <header>
+        Python Basics
+      </header>
+      <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+      <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+      <a class="nav-link" href="#Control_Flow">Control Flow</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <a class="nav-link" href="#Lists_and_Dictionaries">Lists and Dictionaries</a>
+    </nav>
+
+    <main id="main-doc">
+
+      <!--SECTION 1-->
+      <section class="main-section" id="Introduction_to_Python">
+
+        <header>
+          Introduction to Python
+        </header>
+
+        <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+        <p>It was created by Guido van Rossum and first released in 1991.</p>
+        <p>Python's design philosophy emphasizes code readability and uses significant indentation to define code blocks.</p>
+        <p>Python is widely used in web development, data science, artificial intelligence, machine learning, and cybersecurity scripting.</p>
+        <p>It supports multiple programming paradigms including procedural, object-oriented, and functional programming.</p>
+        <p>Most Linux systems like Ubuntu come with Python pre-installed. You can verify by running the command below in the terminal.</p>
+        <p>Python has a massive standard library and a large ecosystem of third-party packages available through PyPI.</p>
+        <p>Its syntax is close to plain English, which lowers the barrier of entry for new programmers.</p>
+        <p>Python is open-source and free to use on all major operating systems.</p>
+        <p>You can also run Python directly in the browser via platforms like Google Colab or Replit.</p>
+
+        <code>
+        $ python3 --version
+        Python 3.12.3
+        </code>
+
+        <li>Python is open-source and free to use</li>
+        <li>Runs on Windows, macOS, and Linux</li>
+        <li>Huge community support and documentation</li>
+        <li>Popular in data science, web dev, and cybersecurity</li>
+        <li>Interpreted language — no compilation needed</li>
+
+      </section>
+
+      <!--SECTION 2-->
+      <section class="main-section" id="Variables_and_Data_Types">
+
+        <header>
+          Variables and Data Types
+        </header>
+        
+        <p>In Python, variables are containers for storing data values.</p>
+        <p>Unlike other languages, Python has no command for declaring a variable — it is created the moment you first assign a value to it.</p>
+        <p>Python is dynamically typed, meaning you do not need to specify the data type when declaring a variable.</p>
+        <p>Python has several built-in data types: int, float, str, bool, and None.</p>
+        <p>Strings can be enclosed in single quotes, double quotes, or triple quotes for multiline strings.</p>
+        <p>Python supports f-strings (formatted string literals) introduced in Python 3.6 for easy string interpolation.</p>
+        <p>The type() function returns the data type of any variable, which is useful for debugging.</p>
+        <p>Python supports type casting using functions like int(), str(), and float().</p>
+        <p>Variable names are case-sensitive and should follow snake_case convention.</p>
+        <p>Variable names must start with a letter or underscore, never a number.</p>
+
+        <code>
+        # Variable assignment examples
+        name = "John"          # str
+        age = 21               # int
+        gpa = 1.75             # float
+        is_enrolled = True     # bool
+        nothing = None         # NoneType
+
+        # Type casting
+        age_str = str(age)     # "21"
+        pi = float("3.14159")  # 3.14159
+
+        # F-string
+        print(f"Hello, {name}! You are {age} years old.")
+        </code>
+
+        <li>No need to declare variable types explicitly</li>
+        <li>Use snake_case for variable names (e.g., student_name)</li>
+        <li>Python is case-sensitive: myVar is not equal to myvar</li>
+        <li>None is Python's equivalent of null</li>
+        <li>Use type() to check the data type of a variable</li>
+
+      </section>
+
+      <!--SECTION 3-->
+      <section class="main-section" id="Control_Flow">
+
+        <header>
+          Control Flow
+        </header>
+
+        <p>Control flow refers to the order in which individual statements and instructions are executed or evaluated.</p>
+        <p>In Python, control flow is managed using conditionals and loops.</p>
+        <p>The if-elif-else statement is the primary tool for decision-making in Python.</p>
+        <p>Python does not have a traditional switch-case statement, though Python 3.10 introduced the match statement.</p>
+        <p>Multiple conditions are chained using elif, which is short for "else if".</p>
+        <p>Python provides two main loop types: the for loop and the while loop.</p>
+        <p>The range() function is frequently used with for loops to generate a sequence of numbers.</p>
+        <p>Python's indentation is critical — the body of an if block or loop must be consistently indented (typically 4 spaces).</p>
+        <p>Using break exits a loop entirely, while continue skips the current iteration and moves to the next one.</p>
+        <p>Both for and while loops support an optional else clause that runs when the loop finishes normally.</p>
+
+        <code>
+        # If-elif-else example
+        grade = 88
+
+        if grade >= 90:
+            print("Excellent!")
+        elif grade >= 75:
+            print("Passed!")
+        else:
+            print("Failed. Try again.")
+
+        # For loop with range
+        for i in range(1, 6):
+            print(f"Count: {i}")
+
+        # While loop
+        count = 0
+        while count < 3:
+            print(f"Running... {count}")
+            count += 1
+        </code>
+
+        <li>Python uses indentation (not braces) to define blocks</li>
+        <li>elif is used instead of else if</li>
+        <li>range(start, stop, step) generates number sequences</li>
+        <li>break exits a loop; continue skips the current iteration</li>
+        <li>for loops can iterate over strings, lists, tuples, and more</li>
+
+      </section>
+
+      <!--SECTION 4-->
+      <section class="main-section" id="Functions">
+
+        <header>
+          Functions
+        </header>
+
+        <p>A function is a reusable block of code that performs a specific task.</p>
+        <p>Functions help you avoid repeating code, make programs easier to read, and break complex problems into smaller pieces.</p>
+        <p>In Python, functions are defined using the def keyword, followed by the function name, parentheses, and a colon.</p>
+        <p>Functions can accept parameters (inputs) and return values using the return statement.</p>
+        <p>If no return statement is used, the function returns None by default.</p>
+        <p>Python supports default parameter values, keyword arguments, *args, and **kwargs.</p>
+        <p>Lambda functions are short, one-line anonymous functions written using the lambda keyword.</p>
+        <p>Python also supports recursion — a function calling itself — useful for problems like computing factorials.</p>
+        <p>Recursive functions require a base case to prevent infinite loops.</p>
+        <p>Docstrings are triple-quoted strings placed right after the function definition to document what it does.</p>
+
+        <code>
+        # Basic function
+        def greet(name, greeting="Hello"):
+            """Returns a greeting message."""
+            return f"{greeting}, {name}!"
+
+        print(greet("Ver"))            # Hello, Ver!
+        print(greet("Ver", "Kamusta")) # Kamusta, Ver!
+
+        # Lambda function
+        square = lambda x: x ** 2
+        print(square(5))   # 25
+
+        # Recursive function
+        def factorial(n):
+            if n == 0:
+                return 1
+            return n * factorial(n - 1)
+
+        print(factorial(5))  # 120
+        </code>
+
+        <li>Define functions with the def keyword</li>
+        <li>Parameters can have default values</li>
+        <li>Use *args for variable positional arguments</li>
+        <li>Use **kwargs for variable keyword arguments</li>
+        <li>Lambda functions are for short, single-expression logic</li>
+
+      </section>
+
+      <!--SECTION 5-->
+      <section class="main-section" id="Lists_and_Dictionaries">
+
+        <header>
+          Lists and Dictionaries
+        </header>
+
+        <p>Lists and dictionaries are two of the most commonly used data structures in Python.</p>
+        <p>A list is an ordered, mutable collection of items enclosed in square brackets.</p>
+        <p>Lists can contain items of different data types and allow duplicate values.</p>
+        <p>Common list methods include append(), remove(), pop(), sort(), and len().</p>
+        <p>A dictionary is a collection of key-value pairs enclosed in curly braces.</p>
+        <p>Dictionaries are mutable and do not allow duplicate keys.</p>
+        <p>You can access dictionary values using their keys and add new pairs by direct assignment.</p>
+        <p>As of Python 3.7+, dictionaries maintain insertion order.</p>
+        <p>List comprehensions provide a concise way to create lists based on existing iterables.</p>
+        <p>Dictionaries are commonly used to handle JSON data, API responses, and database query results.</p>
+
+        <code>
+        # List example
+        students = ["Ver", "Luja", "Jean", "Tadeo", "Ryan"]
+        students.append("Ian Carlo")
+        students.sort()
+        print(students[0])   # Ian Carlo (after sort)
+        print(len(students)) # 6
+
+        # List comprehension
+        squares = [x**2 for x in range(1, 6)]
+        print(squares)  # [1, 4, 9, 16, 25]
+
+        # Dictionary example
+        student = {
+            "name": "John Denver",
+            "year": 3,
+            "course": "BSIT",
+            "gpa": 1.75
+        }
+        print(student["name"])  # John Denver
+        student["school"] = "CCSFP"
+        </code>
+
+        <li>Lists use square brackets [ ]; dictionaries use curly braces { }</li>
+        <li>List items are accessed by index (0-based)</li>
+        <li>Dictionary values are accessed by their key</li>
+        <li>Both support comprehensions for concise code</li>
+        <li>Dictionaries are perfect for handling JSON and API data</li>
+
+      </section>
+
+    </main>
+    
+  </body>
+</html>
