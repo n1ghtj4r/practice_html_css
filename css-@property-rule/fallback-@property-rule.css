@@ -1,0 +1,33 @@
+:root {
+  --main-color: #3498db;
+}
+
+@property --main-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3498db;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+/*FALLBACK BY VAR() FUNCTION*/
+
+.button {
+  background-color: var(--main-color, #3498db);
+}
+
+@property --padding {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: darkred;
+  color: white;
+  padding: var(--padding);
+}

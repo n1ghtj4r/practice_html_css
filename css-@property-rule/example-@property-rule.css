@@ -1,0 +1,9 @@
+@property --main-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3498db;
+}
+
+.button {
+  background-color: var(--main-color);
+}

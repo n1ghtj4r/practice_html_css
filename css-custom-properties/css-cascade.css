@@ -1,0 +1,4 @@
+.alert {
+  --main-color: #e74c3c;
+  background-color: var(--main-color);
+}

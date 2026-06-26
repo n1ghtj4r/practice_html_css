@@ -1,0 +1,7 @@
+:root {
+  --text-color: green;
+}
+
+.text {
+  color: var(--text-color, green);
+}
