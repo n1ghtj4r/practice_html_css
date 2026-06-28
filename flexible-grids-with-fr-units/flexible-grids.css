@@ -1,0 +1,17 @@
+html,
+body {
+  width: 90%;
+  height: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 15px;
+  background-color: darkgray;
+  height: 100%;
+}
+
+.col {
+  background-color: darkslateblue;
+}
