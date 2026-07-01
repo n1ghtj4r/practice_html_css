@@ -1,0 +1,11 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px; /* Only 2 explicit columns */
+}
+
+.grid-item {
+  background-color: burlywood;
+  border: 1px solid orangered;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
