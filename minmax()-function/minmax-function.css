@@ -1,0 +1,11 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(150px, 300px) 1fr;
+  gap: 20px;
+}
+
+.grid-container > div {
+  background: crimson;
+  padding: 20px;
+  text-align: center;
+}
