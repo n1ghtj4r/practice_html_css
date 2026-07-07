@@ -1,0 +1,82 @@
+body{
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+--color0: #0a7d0c;
+--color1: #0a4d0c;
+--color2: #0a5d0c;
+--color3: #0a3d0c;
+--color4: #0a8d0c;
+--color5: #0a9d0c;
+--solid-border: 4px solid #dad7cd;
+--dashed-border: 4px dashed #dad7cd;
+}
+
+.available-0{
+  background-color: var(--color0);
+  width: 100px;
+  height: 30px;
+}
+
+.available-1{
+  background-color: var(--color1);
+  width: 100px;
+  height: 30px;
+}
+
+.available-2{
+  background-color: var(--color2);
+  width: 100px;
+  height: 30px;
+}
+
+.available-3{
+  background-color: var(--color3);
+  width: 100px;
+  height: 30px;
+}
+
+.available-4{
+  background-color: var(--color4);
+  width: 100px;
+  height: 30px;
+}
+
+.available-5{
+  background-color: var(--color5);
+  width: 100px;
+  height: 30px;
+}
+
+.sharp td{
+  border-bottom: var(--solid-border);
+}
+
+.half td{
+  border-bottom: var(--dashed-border);
+}
+
+#legend-gradient {
+  width: 100px;
+  height: 20px;
+  border: 2px solid black;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0% 15%,
+    var(--color1) 15% 30%,
+    var(--color2) 30% 45%,
+    var(--color3) 45% 60%,
+    var(--color4) 60% 75%,
+    var(--color5) 75% 90%
+  );
+}
+
+#legend{
+    margin: 30px;
+}
