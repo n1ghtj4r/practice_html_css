@@ -1,0 +1,30 @@
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sliding-element {
+  animation: slide-in 2s ease-out infinite;
+}
+
+/*The animation property is actually a shorthand for several individual properties:
+
+animation-name which specifies the @keyframes rule to use.
+
+animation-duration which sets how long the animation should take to complete.
+
+animation-timing-function which defines how the animation progresses over time - such as ease, linear, ease-in-out.
+
+animation-delay which specifies a delay before the animation starts.
+
+animation-iteration-count which sets how many times the animation should repeat.
+
+animation-direction which determines whether the animation should play forwards, backwards, or alternate.
+
+animation-fill-mode which specifies how the element should be styled before and after the animation.
+
+animation-play-state which allows you to pause and resume the animation.*/
