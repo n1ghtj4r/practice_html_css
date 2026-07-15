@@ -1,0 +1,181 @@
+@media (max-width: 600px) {
+  body {
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* NAVBAR */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end; /* itinutulak yung links papunta right side, base sa screenshot */
+  align-items: center;
+  background-color: #d63447; /* red */
+  padding: 1.5rem 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: 2rem; /* space sa pagitan ng About / Work / Contact */
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+}
+
+/* WELCOME SECTION */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #2b2b2b, #1a1a1a);
+  color: #fff;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#welcome-section p {
+  color: #d63447; /* red accent, tulad ng "a web developer" sa screenshot */
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* PROJECT SECTION */
+#project-section {
+  background-color: #4a5a7a; /* blue-gray tulad ng screenshot */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects-heading {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap; /* para mag-stack sa maliit na screen */
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-tile {
+  background-color: #1a1a2e;
+  width: 320px;
+  border-radius: 4px;
+  overflow: hidden; /* para hindi lumabas yung image sa corners */
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* para hindi ma-distort yung image */
+  display: block;
+}
+
+.project-link {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  background-color: #2a2a4e;
+}
+
+.show-all-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #2b3548;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* CONTACT SECTION */
+#contact-section {
+  background-color: #2b2b3d;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+#contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact-section p {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-link:hover {
+  color: #d63447;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #2b2b3d;
+  border-top: 2px solid #d63447;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+}
